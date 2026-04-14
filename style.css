@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  
+}
+
+body {
+    font-family: 'Segou UI' , system-ui, sans-serif;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    min-height: 100vh;
+
+}
+
+/* Header */
+
+.bz-hero {
+    background: linear-gradient(135deg,#c0392b 0%, #e74c3c 50%, #f39c12 100%); 
+    padding: 3rem 2 rem 4 rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative circles */
+.bz-hero::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height:300px;
+    background: rgba(255, 100, 30, 0.12);
+    bottom: -80px;
+    left: -60px;
+
+}
+
+/* Pokemon Number */
+.bz-number{
+    font-size: 13px;
+    color: rgba (255, 255, 255, 0.75);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Meain Title */
+.bz-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow:0 2px 12px rgba(0, 0, 0, 0.35);
+    margin-bottom: 0.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+/* Subtitle under the main title */
+.bz-subtitle {
+    font-size:1rem;
+    color:rgba(255, 255, 255, 0.85);
+    margin-bottom:1.5rem;
+    font-weight:400;
+}
+
+/* TYPES*/
+.bz-badges{
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    margin: bottom 1.5em;
+}
+
+.bz-badge {
+    padding: 5px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight:600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.bz-badge.fire { background: #ff6b35; color: #fff;}
+.bz-badge.fight { background:#8b1a1a; color:#fff;}
+
+.bz-img-wrap{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Pokemon Image */
+
+.bz-img-wrap img {
+    width: 240px;
+    height: auto;
+    filter: drop-shadow(0 8px 28px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s;
+}
+
+.bz-img-wrap:img:hover {
+    transform:translateY(-6px) scale(1.05);
+
+}
+
+/*Main Content*/
+.bz-body {
+    max-width:820px;
+    margin:auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
